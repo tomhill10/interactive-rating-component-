@@ -1,0 +1,134 @@
+:root {
+  --ratingBackground: #262e38;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: black;
+  font-family: sans-serif;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  color: white;
+  background: rgb(35, 42, 52);
+  background: linear-gradient(
+    180deg,
+    rgba(35, 42, 52, 1) 0%,
+    rgba(24, 30, 39, 1) 94%
+  );
+  width: 90%;
+  height: 90%;
+  max-width: 412px;
+  max-height: 416px;
+  border-radius: 30px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.rating-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating-container p {
+  background-color: var(--ratingBackground);
+  color: white;
+  font-size: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating-container p:hover {
+  background-color: #fc7614;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.submit {
+  width: 100%;
+  height: 45px;
+  border-radius: 20px;
+  border: none;
+  background-color: #fc7614;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.submit:hover {
+  background-color: white;
+  color: #fc7614;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.icon-container i {
+  background-color: var(--ratingBackground);
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* THANK YOU CARD */
+
+.container2 {
+  color: white;
+  background: rgb(35, 42, 52);
+  background: linear-gradient(
+    180deg,
+    rgba(35, 42, 52, 1) 0%,
+    rgba(24, 30, 39, 1) 94%
+  );
+  width: 90%;
+  height: 90%;
+  max-width: 412px;
+  max-height: 416px;
+  border-radius: 30px;
+  padding: 30px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.selectionText {
+  background-color: #262e38;
+  color: #fc7614;
+  padding: 12px 30px;
+  border-radius: 40px;
+}
+
+.weApp {
+  color: rgb(162, 162, 162);
+}
+
+.numberSelected {
+  background-color: #7c8798 !important;
+}
+.numberSelected:hover {
+  background-color: #fc7614 !important;
+}
